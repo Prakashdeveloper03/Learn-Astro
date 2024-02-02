@@ -1,16 +1,38 @@
-# Astro Starter Kit: Basics
+# Learn Astro
 
-```sh
-npm create astro@latest -- --template basics
+![typescript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)
+![markdown](https://img.shields.io/badge/MDX-1B1F24?logo=mdx&logoColor=white)
+![astro](https://img.shields.io/badge/Astro-F55B23?logo=astro&logoColor=white)
+![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&logoColor=white)
+
+This is a demo website to learn Astro.
+
+## Installation
+
+Clone the repository using `git`
+
+```
+git clone https://github.com/Prakashdeveloper03/Learn-Astro.git
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Change to the cloned directory
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```
+cd <directory_name>
+```
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+To install all requirement packages for the application
+
+```
+pnpm i
+```
+
+Then, Run the application
+
+```
+pnpm run dev
+```
 
 ## 🚀 Project Structure
 
@@ -18,16 +40,43 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+├── astro.config.mjs
+├── package.json
+├── pnpm-lock.yaml
+├── public
+│	 └── favicon.svg
+├── README.md
+├── src
+│	 ├── components
+│	 │	 ├── Card.astro
+│	 │	 ├── Features.astro
+│	 │	 ├── Footer.astro
+│	 │	 ├── Header.astro
+│	 │	 ├── Showcase.astro
+│	 │	 └── Tabs.astro
+│	 ├── env.d.ts
+│	 ├── layouts
+│	 │	 └── Layout.astro
+│	 ├── pages
+│	 │	 ├── about.astro
+│	 │	 ├── blog.astro
+│	 │	 ├── index.astro
+│	 │	 └── [slug].astro
+│	 ├── posts
+│	 │	 ├── astro-1-0.md
+│	 │	 ├── astro-1-0-release-update.md
+│	 │	 └── astro-on-netlify-edge-functions.md
+│	 ├── static
+│	 │	 └── images
+│	 │	     ├── deploy-logos.png
+│	 │	     ├── deploy-logos-small.png
+│	 │	     ├── framework-logos.png
+│	 │	     ├── framework-logos-small.png
+│	 │	     ├── logo.svg
+│	 │	     └── screen.png
+│	 └── styles
+│	     └── global.sass
+└── tsconfig.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
@@ -40,15 +89,11 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command                    | Action                                           |
+| :------------------------- | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm run build`           | Build your production site to `./dist/`          |
+| `pnpm run preview`         | Preview your build locally, before deploying     |
+| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
